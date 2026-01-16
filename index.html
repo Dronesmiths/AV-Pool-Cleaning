@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AV Pool Cleaners | Antelope Valley Pool & Spa Service</title>
-  
+
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- STYLES -->
   <link rel="stylesheet" href="css/styles.css">
-  
+
   <!-- FAVICON (Placeholder) -->
   <link rel="icon" href="images/icon-water.webp" type="image/webp">
 </head>
+
 <body>
+
+  <!-- HEADER -->
+  <header class="av-header">
+    <div class="av-header-inner">
+
+      <!-- LOGO -->
+      <a href="/" class="av-logo">
+        <img src="images/logo.webp" alt="AV Pool Cleaners Logo">
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <nav class="av-nav">
+        <a href="#green-pool-recovery" class="av-green-link">
+          Green Pool Recovery
+        </a>
+        <a href="#services">Pool Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="tel:6614984444" class="av-cta">Get a Quote</a>
+      </nav>
+
+      <!-- MOBILE MENU ICON -->
+      <button class="av-menu-icon" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="av-mobile-menu">
+      <a href="#green-pool-recovery" class="av-green-link">
+        Green Pool Recovery
+      </a>
+      <a href="#services">Pool Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="tel:6614984444" class="av-cta">Get a Quote</a>
+    </div>
+  </header>
 
   <!-- HERO SECTION -->
   <section class="av-video-hero">
@@ -97,7 +140,7 @@
   </section>
 
   <!-- SERVICES SECTION -->
-  <section class="av-services-section">
+  <section id="services" class="av-services-section">
     <div class="av-services-inner">
 
       <h2>Our Pool & Spa Cleaning Services</h2>
@@ -164,7 +207,7 @@
   </section>
 
   <!-- BEFORE / AFTER SECTION -->
-  <section class="av-lux-ba">
+  <section id="green-pool-recovery" class="av-lux-ba">
     <div class="av-lux-ba-inner">
 
       <h2>Before & After: The AV Pool Cleaners Difference</h2>
@@ -186,18 +229,10 @@
         <div class="ba-slider">
 
           <!-- BEFORE -->
-          <img
-            src="images/ba-before.webp"
-            alt="Pool before professional cleaning"
-            class="before"
-          >
+          <img src="images/ba-before.webp" alt="Pool before professional cleaning" class="before">
 
           <!-- AFTER -->
-          <img
-            src="images/ba-after.webp"
-            alt="Pool after professional service"
-            class="after"
-          >
+          <img src="images/ba-after.webp" alt="Pool after professional service" class="after">
 
           <input type="range" min="0" max="100" value="50" class="ba-range">
 
@@ -215,7 +250,7 @@
   </section>
 
   <!-- PRICING SECTION -->
-  <section class="av-pricing">
+  <section id="pricing" class="av-pricing">
 
     <h2>Simple, Affordable Pricing</h2>
 
@@ -292,10 +327,7 @@
       <!-- MAP CARD -->
       <div class="av-card">
         <div class="av-map-wrap">
-          <img
-            src="images/map-preview.webp"
-            alt="AV Pool Cleaners Antelope Valley"
-          >
+          <img src="images/map-preview.webp" alt="AV Pool Cleaners Antelope Valley">
         </div>
 
         <div class="av-map-copy">
@@ -423,7 +455,7 @@
   </section>
 
   <!-- TECH SECTION -->
-  <section class="av-tech">
+  <section id="about" class="av-tech">
 
     <h2>Meet Your Pool Technician</h2>
 
@@ -436,10 +468,7 @@
 
       <!-- IMAGE -->
       <div class="tech-photo">
-        <img
-          src="images/tech-brian.webp"
-          alt="Brian – AV Pool Cleaners Technician"
-        >
+        <img src="images/tech-brian.webp" alt="Brian – AV Pool Cleaners Technician">
       </div>
 
       <!-- TEXT -->
@@ -561,4 +590,5 @@
   <script src="js/script.js"></script>
 
 </body>
+
 </html>

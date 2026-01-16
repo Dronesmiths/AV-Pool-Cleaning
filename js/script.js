@@ -3,6 +3,7 @@
 /* =============================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Before/After Slider
   document.querySelectorAll('.ba-slider').forEach(slider => {
     const range = slider.querySelector('.ba-range');
     const after = slider.querySelector('.after');
@@ -20,4 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
       range.addEventListener('input', e => update(e.target.value));
     }
   });
+
+  // Mobile Menu Toggle
+  const menuBtn = document.querySelector('.av-menu-icon');
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      document.body.classList.toggle('av-menu-open');
+    });
+  }
 });

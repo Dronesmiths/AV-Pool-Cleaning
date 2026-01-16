@@ -17,6 +17,137 @@ a {
     text-decoration: none;
 }
 
+/* ================================ */
+/* AV POOL CLEANERS GLOBAL HEADER   */
+/* ================================ */
+
+.av-header {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+.av-header-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.av-logo img {
+    height: 95px;
+    width: auto;
+    display: block;
+}
+
+/* DESKTOP NAV */
+.av-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.av-nav a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .25s ease;
+}
+
+.av-nav a:hover {
+    color: #0099ff;
+}
+
+/* GREEN POOL LINK EMPHASIS */
+.av-green-link {
+    color: #0b8f3a;
+    font-weight: 700;
+}
+
+.av-green-link:hover {
+    color: #06702c;
+}
+
+/* CTA BUTTON */
+.av-cta {
+    padding: 10px 22px;
+    background: #00aaff;
+    color: #ffffff !important;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.av-cta:hover {
+    background: #0088dd;
+}
+
+/* MOBILE ICON */
+.av-menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.av-menu-icon span {
+    width: 28px;
+    height: 3px;
+    background: #003366;
+    border-radius: 3px;
+}
+
+/* MOBILE MENU */
+.av-mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.av-mobile-menu a {
+    padding: 14px 0;
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.av-mobile-menu .av-green-link {
+    color: #0b8f3a;
+    font-weight: 700;
+}
+
+/* RESPONSIVE HEADER */
+@media (max-width: 900px) {
+    .av-nav {
+        display: none;
+    }
+
+    .av-menu-icon {
+        display: flex;
+    }
+
+    body.av-menu-open .av-mobile-menu {
+        display: flex;
+    }
+
+    .av-logo img {
+        height: 75px;
+    }
+}
+
 /* ============================= */
 /* AV IMAGE HERO — CLEAN POP     */
 /* ============================= */
