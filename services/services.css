@@ -411,3 +411,66 @@
         margin: 0 auto;
     }
 }
+/* PHONE HIGHLIGHT */
+.cta-phone-highlight {
+  background: rgba(255,255,255,0.12);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  padding: 32px 40px;
+  margin: 0 auto 40px;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+}
+
+.cta-phone-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #bfe7ff;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 12px;
+}
+
+.cta-phone-number {
+  display: block;
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: .02em;
+  transition: color .2s ease;
+}
+
+.cta-phone-number:hover {
+  color: #00c6ff;
+}
+
+/* WHITE SECONDARY BUTTON */
+.av-btn-secondary-white {
+  background: rgba(255,255,255,0.95);
+  color: #003366;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .25s ease;
+  border: 2px solid transparent;
+}
+
+.av-btn-secondary-white:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(255,255,255,0.3);
+}
+
+/* RESPONSIVE PHONE */
+@media (max-width: 640px) {
+  .cta-phone-number {
+    font-size: 36px;
+  }
+  
+  .cta-phone-highlight {
+    padding: 24px 28px;
+  }
+}
